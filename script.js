@@ -54,7 +54,7 @@ function newNumber(){
         }
     }
 
-    //makes 3d array 2d and then adds all numbers together for points
+    //makes 2d array 1d and then adds all numbers together for points
     let allNumbers = board.flat();
     console.log(allNumbers);
     let total = 0;
