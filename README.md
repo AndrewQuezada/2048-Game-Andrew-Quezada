@@ -15,22 +15,24 @@ Open the game in your browser
 1. Game Board Setup
 
 The board is stored as a 2D array
-
+```
 let board = [
     [0, 0, 0, 0],
     [0, 0, 0, 0],
     [0, 0, 0, 0],
     [0, 0, 0, 0]
 ];
-
+```
 A value of 0 means the tile is empty.
 
 2. Random Number Generation
 
 The newNumber() function randomly places a 2 or 4 in an empty space on the board.
 
+```
 const options = [2, 4];
 const randomNum = options[Math.floor(Math.random() * options.length)];
+```
 
 The function also:
 
@@ -43,9 +45,9 @@ Remakes the board
 3. Drawing the Board
 
 The playGame() function creates the HTML table
-
+```
 function playGame() {
-  let html = "<table>";
+  let html = "<table
 
   for(let i = 0; i < 4; i++){
     html += "<tr>";
@@ -60,6 +62,8 @@ function playGame() {
 
   document.getElementById("grid").innerHTML = html;
 }
+```
+
 
 This updates the visual game board every move.
 
@@ -73,7 +77,7 @@ Up
 Down
 
 The slide() function handles merging matching numbers.
-
+```
 function slide(row) {
   row = emptyCells(row);
   for (let i = 0; i < row.length - 1; i++){
@@ -91,7 +95,7 @@ function slide(row) {
 
   return row;
 }
-
+```
 5. Keyboard Controls
 
 The game listens for arrow key presses.
@@ -127,6 +131,7 @@ A win message and animation are displayed.
 
 A testing function lets you instantly trigger a win.
 
+```
 function iWin() {
   board = [
     [2048, 0, 0, 0],
@@ -138,6 +143,7 @@ function iWin() {
   max = 2048;
   playGame();
 }
+```
 
 Use in the browser console:
 
@@ -145,10 +151,9 @@ iWin();
 
 Example HTML Structure:
 
+```
 <!DOCTYPE html>
-
-<html lang="en">
-    
+<html lang="en"> 
 <head>
     
     <meta charset="UTF-8">
@@ -184,3 +189,4 @@ Example HTML Structure:
     <script src="script.js"></script>
 </body>
 </html>
+```
