@@ -1,0 +1,113 @@
+ body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #fffbf0;
+      font-family: "Changa One", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      color: #5f3903;
+    }
+
+    h1 {
+      margin-top: 20px;
+      color: rgb(95, 57, 3);
+      font-size: 70px;
+      margin-left: 70px;
+    }
+
+    .message{
+      font-size: 30px;
+    }
+
+    .message2 {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto;
+  }
+
+.score-box {
+    background-color: #f3f3f3;
+    border: 1px solid rgb(95, 57, 3);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+    .grid table {
+      margin: 0 auto;
+      border-collapse: collapse;
+    }
+
+    td {
+      width: 80px;
+      height: 80px;
+      font-size: 40px;
+      text-align: center;
+      vertical-align: middle;
+      border: 10px solid #dec393;
+      background-color: #ffecc2;
+    }
+
+    #new {
+      width: 100px;
+      height: 40px;
+      background-color: rgb(15, 226, 0);
+      color: rgb(0, 0, 0);
+      border-radius: 20px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+
+    img{
+      margin: -70px;
+    }
+
+    #gameover {
+      font-size: 100px;
+      color: red;
+      margin: 0;
+      padding: 0;
+    }
+
+    .tile {
+      width: 80px;
+      height: 80px;
+      font-size: 30px;
+}
+
+  .best-tile {
+      width: 100px;
+      height: 100px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 35px;
+      font-weight: bold;
+      border-radius: 10px;
+  }
+
+/*all color tiles*/
+.tile2 { background: #eee4da !important; color: #5f3903; }
+
+.tile4 { background: #f0dcc7 !important; color: #5f3903; }
+
+.tile8 { background: #ffb667 !important; color: #ffffff; }
+
+.tile16 { background: #ffa442 !important; color: #ffffff; }
+
+.tile32 { background: #ff7070 !important; color: #ffffff; }
+
+.tile64 { background: #ff3030 !important; color: #ffffff; }
+
+.tile128 { background: #ffe877 !important; color: #ffffff; }
+
+.tile256 { background: #ffde49 !important; color: #ffffff; }
+
+.tile512 { background: #ffdb3a !important; color: #ffffff; }
+
+.tile1024 { background: #ffd930 !important; color: #ffffff; }
+
+.tile2048 { background: #ffd000 !important; color: #ffffff; }

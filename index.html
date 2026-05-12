@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="2048.png">
+</head>
+<body>
+    <h1>
+        2048
+        <span id="bestTile" class="best-tile">2</span>
+    </h1>
+
+    <p class="message2">
+        <span class="score-box">
+            Best Tile: <strong id="highscore"></strong>
+        </span>
+
+        <span class="score-box">
+            Best Score: <strong id="points3"></strong> K
+        </span>
+    </p>
+    <p class ="message">Highest Tile: <strong id="points"></strong> &emsp; <span id ="message">Score: <strong id="points2"></strong> K</span></p>
+    <p id="gameover"></p>
+    <p>Join the number and get the 2048 tile!</p>
+    <div id="grid" class="grid"></div>
+    <P id="ins">How to play: <strong>use arrow keys to mave the numbers (&#x2190; &#x2191; &#x2192; &#x2193;)</strong></P>
+
+    <script src="script.js"></script>
+</body>
+</html>
