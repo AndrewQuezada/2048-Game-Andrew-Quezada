@@ -49,12 +49,10 @@ function playGame() {
 
   for(let i = 0; i < 4; i++){
     html += "<tr>";
-
     for(let j = 0; j < 4; j++) {
       let num = board[i][j] === 0 ? "" : board[i][j];
       html += `<td class="tile tile${num}">${num}</td>`;
     }
-
     html += "</tr>";
   }
 
@@ -78,9 +76,7 @@ The slide() function handles merging matching numbers.
 
 function slide(row) {
   row = emptyCells(row);
-
   for (let i = 0; i < row.length - 1; i++){
-
     if (row[i] === row[i + 1]) {
       row[i] *= 2;
       row[i + 1] = 0;
@@ -148,21 +144,28 @@ Use in the browser console:
 iWin();
 
 Example HTML Structure:
+
 <!DOCTYPE html>
+
 <html lang="en">
+    
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2048</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="2048.png">
+    
 </head>
+    
 <body>
+    
     <h1>
         2048
         <span id="bestTile" class="best-tile">2</span>
     </h1>
-
+    
     <p class="message2">
         <span class="score-box">
             Best Tile: <strong id="highscore"></strong>
@@ -181,4 +184,3 @@ Example HTML Structure:
     <script src="script.js"></script>
 </body>
 </html>
-
